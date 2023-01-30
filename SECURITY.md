@@ -22,7 +22,7 @@ Please first submit the vulnerability you discovered using the instructions in
 you may share the details with third parties after either of the following,
 whichever is sooner:
 
-- the vulnerability has been fixed and the Celestia program owner has provided
+- the vulnerability has been fixed and the security program owner has provided
 permission for you to disclose it; or
 - 120 days after you submit the vulnerability
 
@@ -33,10 +33,10 @@ The scope of this security policy applies to the code repositories under the
 
 ### Rewards
 
-Celestia Labs has no formal reward policy and researchers should not expect a
-reward for discovering a vulnerability. Celestia Labs is nonetheless grateful
-for all legitimate discoveries of vulnerabilities, and is happy to acknowledge
-the vulnerability and the researchers after a fix has been widely deployed.
+We have no formal reward policy and researchers should not expect a reward for
+discovering a vulnerability. We are nonetheless grateful for all legitimate
+discoveries of vulnerabilities, and is happy to acknowledge the vulnerability
+and the researchers after a fix has been widely deployed.
 
 ### Official Communication Channel
 
