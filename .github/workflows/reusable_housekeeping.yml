@@ -85,7 +85,7 @@ jobs:
       - uses: actions/add-to-project@v0.5.0
         with:
           project-url: ${{ inputs.project-url }}
-          # There is a celestiaorg level ADD_TO_PROJECT_PAT secret that belongs
+          # There is a rollkit level ADD_TO_PROJECT_PAT secret that belongs
           # to MSevey who should have sufficient access for all public repos
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
           labeled: ${{ inputs.project-labels }}
@@ -101,7 +101,7 @@ jobs:
     steps:
       - uses: necojackarc/auto-request-review@v0.10.0
         with:
-          # There is a celestiaorg level PAT_FOR_AUTO_REQUEST_REVIEW secret that
+          # There is a rollkit level PAT_FOR_AUTO_REQUEST_REVIEW secret that
           # belongs to MSevey who should have sufficient access for all public
           # repos
           token: ${{ secrets.PAT_FOR_AUTO_REQUEST_REVIEW }}

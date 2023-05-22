@@ -29,7 +29,7 @@ permission for you to disclose it; or
 ### Scope
 
 The scope of this security policy applies to the code repositories under the
-[@celestiaorg](https://github.com/celestiaorg) and any related infrastructure.
+[@rollkit](https://github.com/rollkit) and any related infrastructure.
 
 ### Rewards
 
