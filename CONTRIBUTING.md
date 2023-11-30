@@ -17,7 +17,7 @@ teams will be added.
 By default, all teams have `Triage` access to all repositories in the
 `rollkit` Github. This allows for anyone to help manage issues and pull
 requests (i.e. adding labels). Teams are given write access to the repositories
-that they are responsible for working on. 
+that they are responsible for working on.
 
 ### Codeowners
 
