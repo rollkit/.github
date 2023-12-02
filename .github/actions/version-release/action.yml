@@ -4,6 +4,10 @@ inputs:
   github-token:
     required: true
     description: "your GITHUB_TOKEN"
+  release-branch:
+    required: false
+    description: "The branch the tag should be generated from (default: main)"
+    default: "main"
   version-bump:
     required: false
     description: "major, minor, or patch version bump"
@@ -22,6 +26,7 @@ runs:
       with:
         github_token: ${{ inputs.github-token }}
         default_bump: ${{ inputs.version-bump }}
+        release_branches: ${{ inputs.release-branch }}
     - name: Create a GitHub release
       uses: ncipollo/release-action@v1
       with:
