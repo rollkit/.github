@@ -12,14 +12,13 @@ body:
       label: Version Information
       description: Please provide versions of all relevant components
       placeholder: |
-        Git SHA: 
-        Rollkit Version:
-        Go-DA Version:
-        Artela-Rollkit Version:
-        Celestia Version:
-        Sequencer Version:
-        Go Version:
-        Protobuf Version:
+        Rollkit:
+        Go-DA:
+        DA Implementation:
+        Go-Sequencing:
+        Sequencing Implementation:
+        Go-Execution:
+        Execution Implementation:
     validations:
       required: true
   - type: markdown
