@@ -118,6 +118,7 @@ body:
         - Rollkit logs
         - Celestia logs
         - Sequencer logs
+        - Execution logs
         - System logs
         Max 20 lines per component or provide gist/pastebin links
       render: Shell
