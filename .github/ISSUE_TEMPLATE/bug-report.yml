@@ -70,7 +70,9 @@ body:
       label: Configuration Details
       description: Any modifications to default configurations
       placeholder: |
-        Celestia Config Changes:
+        DA Implementation Config:
+        Sequencer Implementation Config:
+        Execution Implementation Config:
         Resource Limitations:
         Environment Variables:
         Command Line Flags:
