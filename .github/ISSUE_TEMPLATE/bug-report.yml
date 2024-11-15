@@ -59,7 +59,9 @@ body:
         Docker Version:
         Docker Compose Version:
         Make Version:
-        Node Version:
+        NodeJS Version (if applicable):
+        Go Version:
+        Protobuf Verion:
         Rust Version (if applicable):
         Other Build Tools:
   - type: textarea
