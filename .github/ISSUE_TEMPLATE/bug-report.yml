@@ -116,7 +116,7 @@ body:
         Please provide relevant logs from different components:
         - Node logs
         - Rollkit logs
-        - Celestia logs
+        - DA logs
         - Sequencer logs
         - Execution logs
         - System logs
