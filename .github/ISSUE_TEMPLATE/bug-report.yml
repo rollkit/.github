@@ -5,76 +5,133 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for filling out this bug report!
+        Thank you for filling out this bug report! Please provide as much detail as possible to help us investigate.
   - type: textarea
     id: version
     attributes:
-      label: Version of Git SHA
-      description: What version of the code are you running, or what git commit sha are you building from?
+      label: Version Information
+      description: Please provide versions of all relevant components
+      placeholder: |
+        Rollkit:
+        Go-DA:
+        DA Implementation:
+        Go-Sequencing:
+        Sequencing Implementation:
+        Go-Execution:
+        Execution Implementation:
     validations:
       required: true
   - type: markdown
     attributes:
       value: |
-        Environment
+        Environment Details
   - type: textarea
     id: os
     attributes:
-      label: System OS
-      description: MacOS, Windows, Linux, etc
+      label: System Information
+      description: Provide detailed system information
+      placeholder: |
+        OS Type & Version:
+        Architecture (arm64/amd64):
+        Kernel Version (for Linux):
+        Memory Size:
+        Available Disk Space:
     validations:
       required: true
   - type: textarea
+    id: network
+    attributes:
+      label: Network Configuration
+      description: Network details if applicable
+      placeholder: |
+        Network Type (Testnet/Mainnet):
+        Network ID:
+        Chain ID:
+        Connected Peers:
+        P2P Port:
+        RPC Port:
+  - type: textarea
     id: tools
     attributes:
-      label: Installed tools
-      description: e.g. docker, makefiles, etc.
+      label: Development Environment
+      description: List all relevant tools and their versions
+      placeholder: |
+        Docker Version:
+        Docker Compose Version:
+        Make Version:
+        NodeJS Version (if applicable):
+        Go Version:
+        Protobuf Verion:
+        Rust Version (if applicable):
+        Other Build Tools:
   - type: textarea
-    id: others
+    id: config
     attributes:
-      label: Others
-      description: >
-        e.g. flag options, celestia config file changes, resources
-        limitation(like cpu, ram limit, swap etc.)
+      label: Configuration Details
+      description: Any modifications to default configurations
+      placeholder: |
+        DA Implementation Config:
+        Sequencer Implementation Config:
+        Execution Implementation Config:
+        Resource Limitations:
+        Environment Variables:
+        Command Line Flags:
+        Custom Parameters:
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce it
-      description: What steps have you made to reproduce it?
-      placeholder: Tell us what you see!
+      label: Steps to Reproduce
+      description: Provide detailed steps to reproduce the issue
+      placeholder: |
+        1. Initial setup steps
+        2. Commands executed
+        3. API calls made
+        4. Expected trigger points
+        5. Error occurrence timing
     validations:
       required: true
   - type: textarea
     id: expectation
     attributes:
-      label: Expected result
-      description: What do you expect to happen as a final result?
-      placeholder: Let us know what is expected
+      label: Expected Result
+      description: What should happen when following these steps?
+      placeholder: Include expected logs, outputs, or behaviors
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Actual result
-      description: What do you see happened instead as a final result?
-      placeholder: >
-        This is the crucial part in detecting the root cause of the issue
+      label: Actual Result
+      description: What actually happened?
+      placeholder: |
+        - Describe the error/unexpected behavior
+        - Include error messages
+        - Note any error codes
+        - Mention any side effects
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
-      label: Relevant log output
-      description: >
-        Please copy and paste any relevant log(max 20 lines) output. This will
-        be automatically formatted into code, so no need for backticks. Or paste
-        gists, pastebins links here
+      label: Relevant Logs
+      description: |
+        Please provide relevant logs from different components:
+        - Node logs
+        - Rollkit logs
+        - DA logs
+        - Sequencer logs
+        - Execution logs
+        - System logs
+        Max 20 lines per component or provide gist/pastebin links
       render: Shell
   - type: textarea
     id: misc
     attributes:
-      label: Notes
-      description: Is there anything else we need to know?
-      placeholder: >
-        Maybe, you have other ways to repro or what side effects there are if
-        changing steps
+      label: Additional Information
+      description: Any other relevant details
+      placeholder: |
+        - Alternative reproduction methods
+        - Related issues
+        - Recent system changes
+        - Workarounds attempted
+        - Impact severity
