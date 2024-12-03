@@ -9,7 +9,7 @@ jobs:
     name: "Approve and Merge Dependabot PRs"
     if: ${{ github.actor == 'dependabot[bot]' }}
     runs-on: ubuntu-latest
-    permissions: 
+    permissions:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
@@ -34,7 +34,7 @@ jobs:
     name: "Approve and Merge RollkitBot PRs"
     if: ${{ github.actor == 'RollkitBot' && contains(github.event.pull_request.labels.*.name, 'action sync') }}
     runs-on: ubuntu-latest
-    permissions: 
+    permissions:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4

@@ -3,82 +3,82 @@ rollkit/.github:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "docker" }, { ecosystem: "github-actions" }, { ecosystem: "npm" }]
+      deps: [{ecosystem: "docker"}, {ecosystem: "github-actions"}, {ecosystem: "npm"}]
 rollkit/astria-sequencer:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
 rollkit/avail-da:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
 rollkit/based-sequencer:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "docker" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "docker"}, {ecosystem: "github-actions"}]
 rollkit/bitcoin-da:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
 rollkit/centralized-sequencer:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "docker" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "docker"}, {ecosystem: "github-actions"}]
 rollkit/cosmos-sdk-starter:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
 rollkit/docs:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "npm" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "npm"}, {ecosystem: "github-actions"}]
 rollkit/go-da:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
 rollkit/go-execution:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
 rollkit/go-execution-abci:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
 rollkit/go-execution-evm:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
 rollkit/go-sequencing:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
 rollkit/local-da:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "docker" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "docker"}, {ecosystem: "github-actions"}]
 rollkit/rollkit:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "docker" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "docker"}, {ecosystem: "github-actions"}]
 rollkit/template-da-repo:
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
-      deps: [{ ecosystem: "gomod" }, { ecosystem: "github-actions" }]
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
 
 # Use groups for common files that have no differences
 group:
