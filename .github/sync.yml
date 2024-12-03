@@ -70,6 +70,10 @@ rollkit/local-da:
     template:
       deps: [{ecosystem: "gomod"}, {ecosystem: "docker"}, {ecosystem: "github-actions"}]
 rollkit/rollkit:
+  # Listing additional files here since the rollkit repo doesn't currently use the semantic release action
+  - .github/workflows/approve_merge_bots.yml
+  - .github/workflows/semantic_pull_request.yml
+  - .github/auto_request_review.yml
   - source: .github/dependabot.njk
     dest: .github/dependabot.yml
     template:
@@ -96,7 +100,6 @@ group:
     rollkit/go-execution-evm
     rollkit/go-sequencing
     rollkit/local-da
-    rollkit/rollkit
     rollkit/template-da-repo
   files:
     - .github/workflows/approve_merge_bots.yml
