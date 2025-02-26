@@ -1,0 +1,108 @@
+# Use individual repo settings for files that differ
+rollkit/.github:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "docker"}, {ecosystem: "github-actions"}, {ecosystem: "npm"}]
+rollkit/astria-sequencer:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
+rollkit/avail-da:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
+rollkit/based-sequencer:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "docker"}, {ecosystem: "github-actions"}]
+rollkit/bitcoin-da:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
+rollkit/centralized-sequencer:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "docker"}, {ecosystem: "github-actions"}]
+rollkit/cosmos-sdk-starter:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
+rollkit/docs:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "npm"}, {ecosystem: "github-actions"}]
+rollkit/go-da:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
+rollkit/go-execution:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
+rollkit/go-execution-abci:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
+rollkit/go-execution-evm:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
+rollkit/go-sequencing:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
+rollkit/local-da:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "docker"}, {ecosystem: "github-actions"}]
+rollkit/rollkit:
+  # Listing additional files here since the rollkit repo doesn't currently use the semantic release action
+  - .github/workflows/approve_merge_bots.yml
+  - .github/workflows/semantic_pull_request.yml
+  - .github/auto_request_review.yml
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "docker"}, {ecosystem: "github-actions"}]
+rollkit/template-da-repo:
+  - source: .github/dependabot.njk
+    dest: .github/dependabot.yml
+    template:
+      deps: [{ecosystem: "gomod"}, {ecosystem: "github-actions"}]
+
+# Use groups for common files that have no differences
+group:
+  repos: |
+    rollkit/astria-sequencer
+    rollkit/avail-da
+    rollkit/based-sequencer
+    rollkit/bitcoin-da
+    rollkit/centralized-sequencer
+    rollkit/cosmos-sdk-starter
+    rollkit/docs
+    rollkit/go-da
+    rollkit/go-execution
+    rollkit/go-execution-abci
+    rollkit/go-execution-evm
+    rollkit/go-sequencing
+    rollkit/local-da
+    rollkit/template-da-repo
+  files:
+    - .github/workflows/approve_merge_bots.yml
+    - .github/workflows/semantic_pull_request.yml
+    - .github/workflows/semantic_release.yml
+    - .github/auto_request_review.yml
