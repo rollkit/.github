@@ -1,4 +1,4 @@
-i :rotating_light: Rollkit is now Evolve :rotating_light:
+:rotating_light: Rollkit is now Evolve :rotating_light:
 As part of the broader rebrand and naming update, the Rollkit repo has been renamed and moved under the new evstack organization.
 :file_folder: New home for the code:
  :point_right: https://github.com/evstack
